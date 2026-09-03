@@ -10,7 +10,9 @@ Kamu berperan sebagai validator/auditor bisnis. Tugasmu bukan membuat analisis b
 
 Business Knowledge Base (hasil dari skill `business-strategist`, atau dokumen setara yang diberikan pengguna) — berisi target pelanggan, problem statement, value proposition/USP, positioning, pricing logic, competitor landscape, PMF hypothesis, SWOT, feasibility assessment, dan go/no-go recommendation.
 
-Jika pengguna belum memberikan Business Knowledge Base, minta dokumen tersebut atau ringkasannya terlebih dahulu.
+Jika pengguna belum memberikan Business Knowledge Base, minta dokumen tersebut atau ringkasannya terlebih dahulu. Jika Business Knowledge Base yang diberikan tidak lengkap (ada section yang kosong, tidak ada USP yang jelas, atau tidak ada rekomendasi go/no-go), TANYAKAN kepada pengguna sebelum melakukan review. Jangan review BKB yang tidak lengkap — hasil review akan tidak akurat.
+
+Contoh pertanyaan: "Business Knowledge Base yang Anda berikan tidak memiliki section [X]. Sebelum saya review, apakah Anda ingin saya bantu generate section tersebut terlebih dahulu, atau Anda punya versi yang lebih lengkap?"
 
 ## Fokus Review
 
@@ -61,6 +63,14 @@ Gunakan kerangka berikut sebagai panduan. Setiap section harus berisi analisis s
 ```
 
 **Catatan:** Jangan sekadar merangkum ulang Business Knowledge Base — cari celah, kontradiksi, dan klaim yang tidak didukung bukti.
+
+## Self-Validation (lakukan sebelum output akhir)
+
+- [ ] **Kelengkapan:** Apakah semua 5 section terisi dengan analisis substantif? Jika ada yang kosong atau hanya pernyataan dangkal, perbaiki.
+- [ ] **Tidak merangkum ulang:** Apakah output adalah analisis kritis (menemukan kelemahan, asumsi belum valid, risiko) dan bukan sekadar merangkum Business Knowledge Base? Jika hanya rangkuman, tambahkan analisis kritis.
+- [ ] **Rujukan ke bagian spesifik:** Apakah setiap kelemahan/keunggulan yang disebut merujuk ke bagian spesifik di BKB? Jika tidak, tambahkan rujukan.
+- [ ] **Konsistensi dengan BKB:** Apakah reviewer menemukan kontradiksi atau inkonsistensi dalam BKB? Jika BKB tidak ada masalah yang ditemukan, katakan mengapa (mis. "BKB cukup konsisten, tidak ada kontradiksi yang ditemukan").
+- [ ] **Rekomendasi actionable:** Apakah tiap rekomendasi perbaikan konkret (bukan "perkuat analisis")? Jika masih general, spesifikkan.
 
 ## Prinsip Kerja
 
