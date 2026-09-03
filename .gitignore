@@ -11,9 +11,6 @@ Desktop.ini
 
 # Test outputs (generated — not committed)
 tests/outputs/
-
-# Test artifacts
-tests/outputs/
 tests/prompt_*.txt
 skills/*/outputs/
 
