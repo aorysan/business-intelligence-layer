@@ -15,6 +15,8 @@ Skill ini bekerja paling baik dengan sebagian atau semua input berikut. Jika pen
 - **Pricing** — struktur harga, paket, subscription/one-time/model monetisasi lain.
 - **Market Notes** — tren pasar, segmentasi, kompetitor, kondisi demand, pain point pasar, peluang.
 
+Lihat juga: [no-summary-instruction.md](./no-summary-instruction.md) untuk peringatan penting tentang output format.
+
 ## Tugas Analisis
 
 Bangun Business Knowledge Base yang mencakup seluruh komponen berikut:
@@ -39,3 +41,54 @@ Bangun Business Knowledge Base yang mencakup seluruh komponen berikut:
 ## Format Output
 
 Sajikan sebagai dokumen "Business Knowledge Base" dengan sub-judul untuk tiap 10 komponen di atas, ringkas dan actionable. Dokumen ini akan menjadi input untuk skill review (`business-strategist-reviewer`) dan penyusunan brand story (`brand-story-writer`), jadi tulis dengan jelas dan terstruktur, bukan naratif panjang.
+
+## Output Template
+
+Gunakan kerangka berikut sebagai panduan struktur. Isi setiap section dengan konten substantive — jangan kosongkan atau isi dengan kalimat umum.
+
+```
+# Business Knowledge Base: [Nama Produk]
+
+## 1. Target Pelanggan / Persona
+[Siapa pembeli ideal? Peran, industri/demografi, ukuran bisnis, atau psikografi. Berikan deskripsi spesifik, bukan "UMKM" tanpa narrowing.]
+
+## 2. Problem Statement
+[Masalah utama yang dialami target pelanggan. Seberapa menyakitkan? Must-have atau nice-to-have? Jelaskan urgency/necessity.]
+
+## 3. Value Proposition & USP
+[Manfaat utama yang ditawarkan. Apa yang membuatnya benar-benar unik dibanding alternatif — termasuk alternatif "tidak melakukan apa-apa"? USP harus bisa dibedakan dari kompetitor, bukan sekadar fitur.]
+
+## 4. Positioning Hypothesis
+[Posisi produk di benak target pasar dibanding kompetitor. Contoh: harga vs fitur, mass-market vs niche, self-serve vs enterprise, low-end vs premium.]
+
+## 5. Pricing Logic
+[Apakah struktur harga yang ada masuk akal terhadap value yang dihasilkan dan daya beli target pasar? Model monetisasi yang paling cocok dan alasannya.]
+
+## 6. Competitor Landscape
+[Kompetitor langsung dan tidak langsung. Gap yang bisa dieksploitasi. Jangan sekadar daftar nama — beri analisis mengapa kompetitor tersebut relevan dan di mana celahnya.]
+
+## 7. PMF Hypothesis
+[Asumsi tentang product-market fit dan sinyal apa yang perlu dicari untuk memvalidasinya. Sinyal harus measurable, bukan wishful thinking.]
+
+## 8. SWOT
+[S — Strengths: kekuatan spesifik produk ini. W — Weaknesses: kelemahan internal yang nyata. O — Opportunities: peluang eksternal yang bisa dimanfaatkan. T — Threats: ancaman eksternal. Hindari poin generik yang bisa berlaku untuk produk apa saja.]
+
+## 9. Feasibility & Profitability Assessment
+[Perkiraan kelayakan bisnis: struktur biaya, potensi margin, kebutuhan modal, risiko utama terhadap profitabilitas. Bisa berupa estimasi kasar dengan asumsi yang disebutkan, bukan angka pasti.]
+
+## 10. Go / No-Go Recommendation
+[Rekomendasi tegas: lanjutkan / revisi (sebutkan bagian mana yang perlu direvisi) / hentikan. Disertai alasan singkat yang merujuk pada analisis di section sebelumnya.]
+```
+
+**Catatan:** Jika data tidak cukup untuk satu komponen, tandai sebagai "Asumsi" atau "Perlu divalidasi" — jangan mengarang angka pasti.
+
+## Self-Validation (lakukan sebelum output akhir)
+
+Sebelum menyelesaikan output, lakukan checklist berikut dan perbaiki jika ada yang gagal:
+
+- [ ] **Kelengkapan:** Apakah semua 10 section terisi? Jika ada section yang kosong atau hanya 1-2 kalimat, isi dengan konten yang lebih substantive. Jika benar-benar tidak ada data, tandai sebagai "Belum bisa diisi — perlu divalidasi" dan jelaskan apa data yang dibutuhkan.
+- [ ] **Tidak ada ringkasan:** Apakah output adalah analisis lengkap sesuai template, BUKAN ringkasan atau overview dari analisis? Jika hanya ringkasan, regenerate dengan mengisi semua section.
+- [ ] **Tidak ada klaim angka tanpa label:** Apakah setiap angka, estimasi, atau proyeksi memiliki label "Asumsi" atau "Estimasi"? Jika ada angka tanpa label, tambahkan labelnya.
+- [ ] **USP dibedakan dari fitur:** Apakah USP secara eksplisit dibedakan dari fitur yang bisa diklaim kompetitor? Jika USP hanya sebut fitur, perbaiki dengan menjelaskan mengapa fitur tersebut menjadi unik dalam konteks positioning.
+- [ ] **Tidak ada kontradiksi internal:** Apakah ada kontradiksi antara section (mis. target persona tapi pricing tidak cocok, positioning tapi value proposition bertentangan)? Jika ada, perbaiki.
+- [ ] **Konsistensi dengan input:** Apakah analisis berbasis pada input yang diberikan, bukan asumsi yang tidak disebutkan? Jika ada asumsi baru yang tidak didukung input, tandai.
