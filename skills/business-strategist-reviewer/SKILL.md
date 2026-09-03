@@ -34,6 +34,34 @@ Susun laporan dengan struktur berikut:
 4. **Risiko Strategi** — risiko utama jika bisnis dijalankan berdasarkan analisis ini apa adanya.
 5. **Rekomendasi Perbaikan** — langkah konkret untuk memperkuat tiap kelemahan yang ditemukan.
 
+## Output Template
+
+Gunakan kerangka berikut sebagai panduan. Setiap section harus berisi analisis substantif, bukan sekadar pernyataan dangkal.
+
+```
+# Business Audit Report: [Nama Produk]
+
+## 1. Apa yang Sudah Kuat
+[Rujuk ke bagian spesifik di Business Knowledge Base. Jelaskan mengapa bagian tersebut kuat — apa yang membuat analisisnya well-supported, data/dilengkapi logika, atau sesuai dengan realitas pasar. Jangan hanya menyebut "USP kuat" tanpa alasan.]
+
+## 2. Apa yang Lemah
+[Rujuk ke bagian spesifik di Business Knowledge Base. Jelaskan mengapa argumen di bagian tersebut rapuh: kurang data, logika melompat, generalisasi yang berlebihan, atau tidak konsisten dengan bagian lain. Beri contoh konkret mengapa itu lemah.]
+
+## 3. Apa yang Belum Valid
+[Sebutkan asumsi besar yang ada di Business Knowledge Base dan belum teruji. Jelaskan risiko jika asumsi tersebut salah. Contoh: "Asumsi bahwa 5-10% pengguna Freemium akan upgrade ke Pro — belum ada data konversi aktual; jika conversion hanya 1-2%, model bisnis tidak viable."]
+
+## 4. Risiko Strategi
+[Risiko utama jika bisnis dijalankan berdasarkan analisis ini apa adanya. Fokus pada risiko spesifik, bukan generic "risiko pasar". Contoh: "Jika target pasar sebenarnya lebih sensitif harga dari yang diasumsikan, pricing Rp49.000/bulan bisa jadi terlalu tinggi untuk segment yang sebenarnya paling potential."]
+
+## 5. Rekomendasi Perbaikan
+[Untuk tiap kelemahan yang ditemukan di section 2, berikan rekomendasi konkret dan actionable. Bukan "perkuat analisis" tapi "lakukan X, kumpulkan Y data, uji Z asumsi". Prioritaskan yang paling berdampak.]
+
+## Catatan Konsistensi
+[Opsional: jika reviewer menemukan kontradiksi atau inkonsistensi dalam Business Knowledge Base, tunjukkan di section ini. Contoh: "Target persona disebut 'pemilik toko kecil non-teknis' tapi positioning hypothesis mengacu pada 'self-serve enterprise SaaS' — ada mismatch antara persona dan positioning."]
+```
+
+**Catatan:** Jangan sekadar merangkum ulang Business Knowledge Base — cari celah, kontradiksi, dan klaim yang tidak didukung bukti.
+
 ## Prinsip Kerja
 
 - Jangan sekadar merangkum ulang Business Knowledge Base — cari celah, kontradiksi, dan klaim yang tidak didukung bukti.

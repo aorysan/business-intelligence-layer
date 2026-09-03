@@ -8,3 +8,14 @@ Desktop.ini
 .idea/
 *.swp
 *.swo
+
+# Test outputs (generated — not committed)
+tests/outputs/
+
+# Test artifacts
+tests/outputs/
+tests/prompt_*.txt
+skills/*/outputs/
+
+# Generated outputs
+*BKB*.md

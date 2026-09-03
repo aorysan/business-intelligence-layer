@@ -39,3 +39,43 @@ Bangun Business Knowledge Base yang mencakup seluruh komponen berikut:
 ## Format Output
 
 Sajikan sebagai dokumen "Business Knowledge Base" dengan sub-judul untuk tiap 10 komponen di atas, ringkas dan actionable. Dokumen ini akan menjadi input untuk skill review (`business-strategist-reviewer`) dan penyusunan brand story (`brand-story-writer`), jadi tulis dengan jelas dan terstruktur, bukan naratif panjang.
+
+## Output Template
+
+Gunakan kerangka berikut sebagai panduan struktur. Isi setiap section dengan konten substantive — jangan kosongkan atau isi dengan kalimat umum.
+
+```
+# Business Knowledge Base: [Nama Produk]
+
+## 1. Target Pelanggan / Persona
+[Siapa pembeli ideal? Peran, industri/demografi, ukuran bisnis, atau psikografi. Berikan deskripsi spesifik, bukan "UMKM" tanpa narrowing.]
+
+## 2. Problem Statement
+[Masalah utama yang dialami target pelanggan. Seberapa menyakitkan? Must-have atau nice-to-have? Jelaskan urgency/necessity.]
+
+## 3. Value Proposition & USP
+[Manfaat utama yang ditawarkan. Apa yang membuatnya benar-benar unik dibanding alternatif — termasuk alternatif "tidak melakukan apa-apa"? USP harus bisa dibedakan dari kompetitor, bukan sekadar fitur.]
+
+## 4. Positioning Hypothesis
+[Posisi produk di benak target pasar dibanding kompetitor. Contoh: harga vs fitur, mass-market vs niche, self-serve vs enterprise, low-end vs premium.]
+
+## 5. Pricing Logic
+[Apakah struktur harga yang ada masuk akal terhadap value yang dihasilkan dan daya beli target pasar? Model monetisasi yang paling cocok dan alasannya.]
+
+## 6. Competitor Landscape
+[Kompetitor langsung dan tidak langsung. Gap yang bisa dieksploitasi. Jangan sekadar daftar nama — beri analisis mengapa kompetitor tersebut relevan dan di mana celahnya.]
+
+## 7. PMF Hypothesis
+[Asumsi tentang product-market fit dan sinyal apa yang perlu dicari untuk memvalidasinya. Sinyal harus measurable, bukan wishful thinking.]
+
+## 8. SWOT
+[S — Strengths: kekuatan spesifik produk ini. W — Weaknesses: kelemahan internal yang nyata. O — Opportunities: peluang eksternal yang bisa dimanfaatkan. T — Threats: ancaman eksternal. Hindari poin generik yang bisa berlaku untuk produk apa saja.]
+
+## 9. Feasibility & Profitability Assessment
+[Perkiraan kelayakan bisnis: struktur biaya, potensi margin, kebutuhan modal, risiko utama terhadap profitabilitas. Bisa berupa estimasi kasar dengan asumsi yang disebutkan, bukan angka pasti.]
+
+## 10. Go / No-Go Recommendation
+[Rekomendasi tegas: lanjutkan / revisi (sebutkan bagian mana yang perlu direvisi) / hentikan. Disertai alasan singkat yang merujuk pada analisis di section sebelumnya.]
+```
+
+**Catatan:** Jika data tidak cukup untuk satu komponen, tandai sebagai "Asumsi" atau "Perlu divalidasi" — jangan mengarang angka pasti.
