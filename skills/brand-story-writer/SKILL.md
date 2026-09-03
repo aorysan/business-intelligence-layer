@@ -55,6 +55,25 @@ Gunakan kerangka berikut sebagai panduan. Setiap section harus berakar pada insi
 
 **Catatan:** Narasi harus berakar pada insight dari Business Knowledge Base/Audit Report, bukan generik atau template marketing kosong.
 
+## Self-Validation & Cross-Check (lakukan sebelum output akhir)
+
+### Self-Validation Checklist
+
+- [ ] **Kelengkapan:** Apakah semua 6 section terisi? Brand narrative, core message, key claims, tone of voice, messaging pillars, elevator pitch — semuanya harus ada.
+- [ ] **Konsistensi dengan BKB:** Apakah persona, USP, dan positioning yang digunakan di brand story konsisten dengan Business Knowledge Base? Jika ada perbedaan, cek ulang dan perbaiki.
+- [ ] **Tidak overclaim:** Apakah ada klaim yang bertentangan dengan kelemahan yang ditemukan di Business Audit Report? Jika ada, hapus atau tandai sebagai "klaim aspirasional" dengan penjelasan.
+- [ ] **Klaim didukung:** Apakah setiap key claim memiliki dasar di Business Knowledge Base atau Audit Report? Jika ada klaim tanpa dukungan, tambahkan catatan "asumsi" atau hapus.
+- [ ] **Tidak generic:** Apakah brand story terasa spesifik untuk produk ini dan tidak seperti template marketing umum? Jika terasa generic, perbaiki dengan memasukkan detail spesifik dari BKB/Audit.
+- [ ] **Catatan konsistensi:** Apakah bagian "Catatan Konsistensi" diisi dengan explisit menyebutkan klaim yang diadopsi dari BKB/Audit dan bagaimana brand story tetap jujur terhadap kelemahan?
+
+### Cross-Check (lakukan setelah self-validation)
+
+Sebelum final output, lakukan cross-check:
+1. Bandingkan persona di BKB dengan persona yang digunakan di brand story — sama?
+2. Bandingkan USP di BKB dengan klaim di brand story — USP yang sama atau turunannya?
+3. Cek apakah ada klaim di brand story yang bertentangan dengan poin "Apa yang Lemah" atau "Apa yang Belum Valid" di Audit Report.
+4. Jika ada inkonsistensi, perbaiki atau tandai sebagai asumsi.
+
 ## Prinsip Kerja
 
 - Narasi harus berakar pada insight dari Business Knowledge Base/Audit Report, bukan generik atau template marketing kosong.
