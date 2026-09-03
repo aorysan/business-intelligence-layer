@@ -15,6 +15,8 @@ Skill ini bekerja paling baik dengan sebagian atau semua input berikut. Jika pen
 - **Pricing** — struktur harga, paket, subscription/one-time/model monetisasi lain.
 - **Market Notes** — tren pasar, segmentasi, kompetitor, kondisi demand, pain point pasar, peluang.
 
+Lihat juga: [no-summary-instruction.md](./no-summary-instruction.md) untuk peringatan penting tentang output format.
+
 ## Tugas Analisis
 
 Bangun Business Knowledge Base yang mencakup seluruh komponen berikut:
@@ -79,3 +81,14 @@ Gunakan kerangka berikut sebagai panduan struktur. Isi setiap section dengan kon
 ```
 
 **Catatan:** Jika data tidak cukup untuk satu komponen, tandai sebagai "Asumsi" atau "Perlu divalidasi" — jangan mengarang angka pasti.
+
+## Self-Validation (lakukan sebelum output akhir)
+
+Sebelum menyelesaikan output, lakukan checklist berikut dan perbaiki jika ada yang gagal:
+
+- [ ] **Kelengkapan:** Apakah semua 10 section terisi? Jika ada section yang kosong atau hanya 1-2 kalimat, isi dengan konten yang lebih substantive. Jika benar-benar tidak ada data, tandai sebagai "Belum bisa diisi — perlu divalidasi" dan jelaskan apa data yang dibutuhkan.
+- [ ] **Tidak ada ringkasan:** Apakah output adalah analisis lengkap sesuai template, BUKAN ringkasan atau overview dari analisis? Jika hanya ringkasan, regenerate dengan mengisi semua section.
+- [ ] **Tidak ada klaim angka tanpa label:** Apakah setiap angka, estimasi, atau proyeksi memiliki label "Asumsi" atau "Estimasi"? Jika ada angka tanpa label, tambahkan labelnya.
+- [ ] **USP dibedakan dari fitur:** Apakah USP secara eksplisit dibedakan dari fitur yang bisa diklaim kompetitor? Jika USP hanya sebut fitur, perbaiki dengan menjelaskan mengapa fitur tersebut menjadi unik dalam konteks positioning.
+- [ ] **Tidak ada kontradiksi internal:** Apakah ada kontradiksi antara section (mis. target persona tapi pricing tidak cocok, positioning tapi value proposition bertentangan)? Jika ada, perbaiki.
+- [ ] **Konsistensi dengan input:** Apakah analisis berbasis pada input yang diberikan, bukan asumsi yang tidak disebutkan? Jika ada asumsi baru yang tidak didukung input, tandai.
