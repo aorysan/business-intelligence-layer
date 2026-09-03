@@ -3,7 +3,7 @@
 ## Tren Pasar
 - Digitalisasi UKM di Indonesia terus meningkat, didorong kemudahan akses smartphone dan internet
 - Pasca-pandemi, lebih banyak pelaku usaha sadar manfaat sistem digital untuk operasional
-- Trend "SME digitalization" didorong juga oleh pemerintah melalui berbagai programinkubasi
+- Trend "SME digitalization" didorong juga oleh pemerintah melalui berbagai program inkubasi
 - Cloud-based SaaS untuk UKM semakin di-accept sebagai solusi karena tidak perlu infrastruktur berat
 
 ## Segmentasi Pasar

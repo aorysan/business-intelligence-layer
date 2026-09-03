@@ -77,7 +77,10 @@ def construct_prompt(skill_name: str, prev_outputs: dict) -> str:
             parts.append(f"\n\n--- {fname} ---\n{content}")
 
     # Add previous skill outputs (for chained skills)
-    for dep in skill.get("depends_on", []):
+    deps = skill.get("depends_on", [])
+    if isinstance(deps, str):
+        deps = [deps]
+    for dep in deps:
         if dep in prev_outputs and prev_outputs[dep]:
             dep_skill = SKILLS[dep]
             parts.append(f"\n\n--- Output {dep}: {dep_skill['output_file']} ---\n{prev_outputs[dep]}")
@@ -107,7 +110,17 @@ def load_output(skill_name: str) -> Optional[str]:
 
 
 def parse_rubric(rubric_path: Path) -> list:
-    """Parse rubric file into checklist items."""
+    """Parse rubric file into checklist items.
+
+    Rubric structure:
+      ## N. Title
+      - [ ] **Y/N:** description
+      - [ ] **Partial:** description (optional)
+      - [ ] **Evidence:** description
+
+    Returns list of items, each with title, description (from Y/N line),
+    and optional partial_description and evidence_description.
+    """
     if not rubric_path.exists():
         print(f"[ERROR] Rubric not found: {rubric_path}")
         return []
@@ -115,14 +128,41 @@ def parse_rubric(rubric_path: Path) -> list:
     content = rubric_path.read_text(encoding="utf-8")
     items = []
 
-    # Parse checkbox items: - [ ] **Title:** description
-    pattern = r'- \[ \] \*\*(.+?)\*\*:\s*(.+?)(?:\n|$)'
-    for match in re.finditer(pattern, content, re.MULTILINE):
-        title = match.group(1).strip()
-        description = match.group(2).strip()
+    # Match numbered sections: ## N. Title
+    section_pattern = re.compile(r'^##\s+\d+\.\s+(.+)$', re.MULTILINE)
+    # Match checkbox lines under each section
+    checkbox_pattern = re.compile(r'^\s*- \[ \] \*\*(.+?)\*\*:\s*(.+)$', re.MULTILINE)
+
+    # Find all section headers with positions
+    sections = []
+    for m in section_pattern.finditer(content):
+        title = m.group(1).strip()
+        start = m.end()
+        # Find end of this section (next section or end of file)
+        next_match = section_pattern.search(content, start)
+        end = next_match.start() if next_match else len(content)
+        sections.append((title, content[start:end]))
+
+    for title, section_text in sections:
+        # Parse checkbox lines in this section
+        y_n_desc = ""
+        partial_desc = ""
+        evidence_desc = ""
+        for cm in checkbox_pattern.finditer(section_text):
+            label = cm.group(1).strip()
+            desc = cm.group(2).strip()
+            if label.upper() == "Y/N":
+                y_n_desc = desc
+            elif label.upper() == "PARTIAL":
+                partial_desc = desc
+            elif label.upper() == "EVIDENCE":
+                evidence_desc = desc
+
         items.append({
             "title": title,
-            "description": description,
+            "description": y_n_desc,
+            "partial_description": partial_desc,
+            "evidence_description": evidence_desc,
             "checked": False,
             "evidence": "",
             "notes": "",
@@ -182,7 +222,7 @@ def print_checklist(items: list, output_preview: str = ""):
         print(f"   Notes: ___________________________________________")
 
     print("\n" + "=" * 70)
-    print("After evaluating, run again with --mode manual --score to record scores.")
+    print("Fill in each item manually using the checklist above.")
     print("=" * 70)
 
 
@@ -214,8 +254,7 @@ def generate_with_claude_cli(skill_name: str, prompt: str) -> Optional[str]:
     print("[INFO] To generate output, run:")
     print(f"       claude --plugin-dir {plugin_dir} --print < {prompt_file}")
     print("[INFO] Or use interactive mode and paste the prompt.")
-    print("[INFO] After generating, save output to inputs directory manually,")
-    print(f"       or use: python tests/run_bi_test.py --skill {skill_name} --input-output")
+    print(f"[INFO] After generating, save output to: {OUTPUTS_DIR / SKILLS[skill_name]['output_file']}")
     return None
 
 
@@ -384,8 +423,6 @@ def main():
                         help="Test mode: manual (user generates) or auto (attempt automated)")
     parser.add_argument("--skill", type=str, help="Specific skill to test")
     parser.add_argument("--all", action="store_true", help="Run all skills in sequence")
-    parser.add_argument("--evaluate", action="store_true",
-                        help="Evaluate existing outputs against rubrics")
     parser.add_argument("--report", action="store_true", help="Print test report")
     parser.add_argument("--force", action="store_true", help="Regenerate outputs even if exist")
 

@@ -44,13 +44,13 @@ Gunakan kerangka berikut sebagai panduan. Setiap section harus berakar pada insi
 [Karakter komunikasi brand yang cocok dengan persona target pelanggan. Jelaskan mengapa tone ini dipilih dan bagaimana manifestasinya di channel berbeda. Hindari tone generik "startup techy". Contoh: "Hangat tapi lugas — sesuai dengan pemilik toko kecil yang butuh kawan bisnis, bukan tech consultant."]
 
 ## 5. Messaging Pillars
-[3-4 pilar pesan yang bisa dipakai konsisten di berbagai channel. Tiap pilar sebaiknya: (a) logits dari insight BKB/Audit, (b) mudah di-remember, (c) bisa diterjemahkan ke konten marketing. Contoh: "Hemat waktu & kurangi stres stok", "Modal tidak macet di barang lambat", "Mulai dari HP, nggak perlu PC."]
+[3-4 pilar pesan yang bisa dipakai konsisten di berbagai channel. Tiap pilar sebaiknya: (a) logis dari insight BKB/Audit, (b) mudah di-remember, (c) bisa diterjemahkan ke konten marketing. Contoh: "Hemat waktu & kurangi stres stok", "Modal tidak macet di barang lambat", "Mulai dari HP, nggak perlu PC."]
 
 ## 6. Elevator Pitch
 [1-2 kalimat yang memperkenalkan produk dengan singkat. Target: orang yang mendengar punya enough context buat paham apa produk ini dan untuk siapa. Contoh: "InventFlow: aplikasi inventori simpel untuk toko kecil — scan, catat, alert stok menipis, semua dari HP, Rp49rb/bulan."]
 
 ## Catatan Konsistensi
-[Jelaskan secara eksplisit: klaim dan pesan apa saja yang diadopsi dari Business Knowledge Base, dan bagaimana brand story tetap jujur terhadap kelemahan/risk yang ditemukan di Business Audit Report. Jika ada klaim yang diambil meski ada kelemahan di audit, jelaskan mengapa dianggap acceptabe.]
+[Jelaskan secara eksplisit: klaim dan pesan apa saja yang diadopsi dari Business Knowledge Base, dan bagaimana brand story tetap jujur terhadap kelemahan/risk yang ditemukan di Business Audit Report. Jika ada klaim yang diambil meski ada kelemahan di audit, jelaskan mengapa dianggap acceptable.]
 ```
 
 **Catatan:** Narasi harus berakar pada insight dari Business Knowledge Base/Audit Report, bukan generik atau template marketing kosong.
@@ -64,7 +64,7 @@ Gunakan kerangka berikut sebagai panduan. Setiap section harus berakar pada insi
 - [ ] **Tidak overclaim:** Apakah ada klaim yang bertentangan dengan kelemahan yang ditemukan di Business Audit Report? Jika ada, hapus atau tandai sebagai "klaim aspirasional" dengan penjelasan.
 - [ ] **Klaim didukung:** Apakah setiap key claim memiliki dasar di Business Knowledge Base atau Audit Report? Jika ada klaim tanpa dukungan, tambahkan catatan "asumsi" atau hapus.
 - [ ] **Tidak generic:** Apakah brand story terasa spesifik untuk produk ini dan tidak seperti template marketing umum? Jika terasa generic, perbaiki dengan memasukkan detail spesifik dari BKB/Audit.
-- [ ] **Catatan konsistensi:** Apakah bagian "Catatan Konsistensi" diisi dengan explisit menyebutkan klaim yang diadopsi dari BKB/Audit dan bagaimana brand story tetap jujur terhadap kelemahan?
+- [ ] **Catatan konsistensi:** Apakah bagian "Catatan Konsistensi" diisi dengan eksplisit menyebutkan klaim yang diadopsi dari BKB/Audit dan bagaimana brand story tetap jujur terhadap kelemahan?
 
 ### Cross-Check (lakukan setelah self-validation)
 

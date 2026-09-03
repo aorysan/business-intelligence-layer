@@ -4,7 +4,7 @@
 SaaS subscription berbasis bulanan/tahunan dengan 2 tier utama:
 
 ### Tier 1: Starter (Gratis)
-- 1 lokasi/to
+- 1 lokasi/toko
 - Max 500 produk
 - Stok tracking dasar
 - Low stock alert
