@@ -8,6 +8,8 @@ Desktop.ini
 .idea/
 *.swp
 *.swo
+.superpowers
+docs/superpowers/plans
 
 # Test outputs (generated — not committed)
 tests/outputs/
