@@ -1,4 +1,5 @@
 ---
+name: brand-story-writer
 description: Menerjemahkan Business Knowledge Base dan Business Audit Report menjadi Brand Story Guide — narasi brand, core message, key claims, tone of voice, messaging pillars, dan elevator pitch. Gunakan saat pengguna ingin menyusun narasi brand, brand story, messaging, atau elevator pitch berdasarkan hasil analisis bisnis yang sudah ada — misalnya "buatkan brand story untuk produk ini", "susun narasi brand dari analisis ini", "buat elevator pitch", atau "bagaimana cara menyampaikan value proposition ini ke pasar".
 ---
 
