@@ -82,7 +82,7 @@ yang sesuai di input. Jika input tidak punya tabel warna, isi section dengan
 
 ### Self-Validation Checklist
 
-- [ ] **Kelengkapan:** Apakah semua 6 section terisi? Brand narrative, core message, key claims, tone of voice, messaging pillars, elevator pitch — semuanya harus ada.
+- [ ] **Kelengkapan:** Apakah semua 7 section terisi? Brand narrative, core message, key claims, tone of voice, messaging pillars, elevator pitch, dan Brand Color Palette — semuanya harus ada (section warna boleh diisi "Belum tersedia di Product Knowledge Base — perlu divalidasi" bila input tidak punya tabel warna).
 - [ ] **Konsistensi dengan BKB:** Apakah persona, USP, dan positioning yang digunakan di brand story konsisten dengan Business Knowledge Base? Jika ada perbedaan, cek ulang dan perbaiki.
 - [ ] **Tidak overclaim:** Apakah ada klaim yang bertentangan dengan kelemahan yang ditemukan di Business Audit Report? Jika ada, hapus atau tandai sebagai "klaim aspirasional" dengan penjelasan.
 - [ ] **Klaim didukung:** Apakah setiap key claim memiliki dasar di Business Knowledge Base atau Audit Report? Jika ada klaim tanpa dukungan, tambahkan catatan "asumsi" atau hapus.

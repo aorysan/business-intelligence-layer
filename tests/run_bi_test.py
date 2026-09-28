@@ -17,7 +17,6 @@ Examples:
 """
 
 import argparse
-import json
 import re
 import subprocess
 import sys
@@ -91,15 +90,6 @@ def construct_prompt(skill_name: str, prev_outputs: dict) -> str:
     return prompt
 
 
-def save_output(skill_name: str, content: str) -> Path:
-    """Save skill output to outputs directory."""
-    skill = SKILLS[skill_name]
-    path = OUTPUTS_DIR / skill["output_file"]
-    path.write_text(content, encoding="utf-8")
-    print(f"[SAVED] Output saved to: {path}")
-    return path
-
-
 def load_output(skill_name: str) -> Optional[str]:
     """Load previously saved output."""
     skill = SKILLS[skill_name]
@@ -169,41 +159,6 @@ def parse_rubric(rubric_path: Path) -> list:
         })
 
     return items
-
-
-def evaluate_rubric(items: list, output_content: str, rubric_path: Path) -> dict:
-    """
-    Evaluate output against rubric.
-    In manual mode, this just returns the checklist for user to fill.
-    In auto mode, this attempts to score based on content analysis.
-    """
-    results = {
-        "total_items": len(items),
-        "checked_items": 0,
-        "partial_items": 0,
-        "score": 0.0,
-        "items": [],
-    }
-
-    for item in items:
-        result_item = {
-            "title": item["title"],
-            "description": item["description"],
-            "checked": item.get("checked", False),
-            "evidence": item.get("evidence", ""),
-            "notes": item.get("notes", ""),
-        }
-        results["items"].append(result_item)
-
-        if item.get("checked", False):
-            results["checked_items"] += 1
-            results["score"] += 1.0
-        elif item.get("partial", False):
-            results["partial_items"] += 1
-            results["score"] += 0.5
-
-    results["score"] = (results["score"] / results["total_items"]) * 100 if results["total_items"] > 0 else 0.0
-    return results
 
 
 def print_checklist(items: list, output_preview: str = ""):
