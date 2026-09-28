@@ -28,6 +28,7 @@ Susun panduan dengan komponen berikut:
 4. **Tone of Voice** — karakter komunikasi brand (mis. profesional-hangat, berani-lugas, teknis-terpercaya) yang cocok dengan persona target pelanggan.
 5. **Messaging Pillars** — 3-4 pilar pesan yang bisa dipakai konsisten di berbagai channel (website, sales deck, campaign).
 6. **Elevator Pitch** — satu-dua kalimat yang bisa dipakai untuk memperkenalkan produk dalam waktu singkat.
+7. **Brand Color Palette** — peran warna brand (primary/secondary/accent/text/background) yang dipetakan dari tabel `## Colors` di Product Knowledge Base; jangan mengarang warna yang tidak ada di input.
 
 ## Output Template
 

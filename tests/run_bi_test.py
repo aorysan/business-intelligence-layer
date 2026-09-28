@@ -306,52 +306,6 @@ def run_auto_mode(skill_name: str, prev_outputs: dict):
         return None
 
 
-def evaluate_existing(skill_name: str, scores: dict):
-    """Evaluate existing output against rubric (manual scoring)."""
-    skill = SKILLS[skill_name]
-    output = load_output(skill_name)
-
-    if not output:
-        print(f"[ERROR] No output found for {skill_name}")
-        return None
-
-    rubric_path = RUBRICS_DIR / skill["rubric_file"]
-    items = parse_rubric(rubric_path)
-
-    print(f"\n{'='*70}")
-    print(f"EVALUATING: {skill_name}")
-    print(f"{'='*70}")
-    print(f"\n[OUTPUT] ({len(output)} chars)")
-    print(output[:1000] + ("..." if len(output) > 1000 else ""))
-    print("\n")
-
-    # In real usage, this would prompt for each item
-    # For now, we'll create a scoring template
-    print("RUBRIC EVALUATION:")
-    print("-" * 70)
-
-    total = len(items)
-    checked = 0
-    partial = 0
-
-    for i, item in enumerate(items, 1):
-        print(f"\n{i}. {item['title']}")
-        print(f"   {item['description']}")
-        print("   [ ] Not checked  [Y] Yes  [P] Partial  [N] No")
-        # In automated evaluation, we'd need LLM to score
-        # For manual, user fills this in
-
-    print(f"\n[SUMMARY] Total items: {total}")
-    print("[ACTION] Fill in scores manually or use LLM-based evaluator")
-
-    return {
-        "skill": skill_name,
-        "output_length": len(output),
-        "rubric_items": total,
-        "status": "pending_manual_evaluation"
-    }
-
-
 def print_report(results: list):
     """Print test report summary."""
     print("\n" + "=" * 70)
